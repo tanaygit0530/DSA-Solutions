@@ -6,7 +6,6 @@ Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]]
 Notice that the solution set must not contain duplicate triplets.
 
  
-
 Example 1:
 
 Input: nums = [-1,0,1,2,-1,-4]
@@ -34,11 +33,13 @@ Explanation: The only possible triplet sums up to 0.
 
 
  
-
 Constraints:
 
-3 <= nums.length <= 3000
--105 <= nums[i] <= 105
+
+	3 <= nums.length <= 3000
+	-105 <= nums[i] <= 105
+
+
 
 ## Example
 **Input**: Standard sample input  
@@ -101,15 +102,20 @@ Always look for optimal data structure lookups to reduce search time complexity.
 
 ## Solution
 ```java
-                    j = j-1;                }            }        }    }    public List<List<Integer>> threeSum(int[] nums) {        Arrays.sort(nums);        List<List<Integer>> res = new ArrayList<>();        for(int f = 0; f<nums.length; f++){            if(nums[f]>0){                break;            }            if(f == 0 || nums[f] != nums[f-1]){                twoSum(f,nums,res);            }        }            return res;    }}                while(i<j && nums[j] == nums[j+1]){                }
+                }                while(i<j && nums[j] == nums[j                +1]){                    j = j-1;                }            }        }    }    public List<List<Integer>> threeSum(int[]     nums) {        Arrays.sort(nums);        List<List<Integer>> res = new         ArrayList<>();        for(int f = 0; f<nums.length; f++){            if(nums[f]>0){                break;            }            if(f == 0 || nums[f] != nums[f-1]){                twoSum(f,nums,res);            }        }            return res;    }
+                }
+                while(i<j && nums[j] == nums[j
+                +1]){
                     j = j-1;
                 }
             }
         }
     }
-    public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSum(int[] 
+    nums) {
         Arrays.sort(nums);
-        List<List<Integer>> res = new ArrayList<>();
+        List<List<Integer>> res = new 
+        ArrayList<>();
         for(int f = 0; f<nums.length; f++){
             if(nums[f]>0){
                 break;
@@ -120,9 +126,6 @@ Always look for optimal data structure lookups to reduce search time complexity.
         }
             return res;
     }
-}
-                while(i<j && nums[j] == nums[j+1]){
-                }
 
 
 ```
